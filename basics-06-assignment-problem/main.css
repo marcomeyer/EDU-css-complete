@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: blue;
+    font-family: sans-serif;
+}
+
+li {
+    font-family: inherit;
+}
+
+/* li ~ li { */
+li + li {
+    background-color: black;
+    color: white;
+}
+
+/* ol li { */
+ol > li {
+    background-color: black;
+    color: white;
+}
+
+code {
+    color: red;
+    font-family: monospace;
+}
+
+.highlighted code {
+    color: lightgreen;
+}
