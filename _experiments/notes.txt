@@ -1,0 +1,10 @@
+main, div etc. are block level elements  (display: block)
+
+height: 100%  only work if height of parent is defined (rsp. not determined by its children)
+
+box-sizing: content-box;  // default            padding & border are not included in size
+box-sizing: border-box;   // often preferred    padding & border are     included in size
+
+    * {
+        box-sizing: border-box;
+    }
