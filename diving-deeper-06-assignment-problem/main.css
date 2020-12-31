@@ -14,10 +14,13 @@ body {
     display: inline-block;
     margin: 0;
 }
-/* 
+ 
 #first-box {
-    height: 300px;
-    width: 50%;
-    box-sizing: border-box;
-} */
+    /* display: none; */
+    visibility: hidden;
+} 
 
+
+body > div:last-of-type:hover {
+    background: cornflowerblue;
+}
