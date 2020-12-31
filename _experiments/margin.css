@@ -4,10 +4,16 @@ body {
 
 .main {
     margin: 20px;
-    border: 5px solid black;
+    background: gray;
+    /* border: 5px solid black; */
 }
 
 .main div {
-    margin: 20px;  
-    border: 5px solid red;
+    /* why is there no margin collapsing at left & right */
+    /* https://stackoverflow.com/questions/22722074/is-it-possible-to-collapse-through-left-and-right-margins-with-a-parent-element */
+    
+    margin: 20px; 
+    background: coral; 
+    /* border: 5px solid red; */
+    
 }
