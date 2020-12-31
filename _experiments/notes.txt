@@ -19,6 +19,8 @@ display: none;
         cannot have margin-top, margin-bottom
         cannot have width and height (is set to auto)
         have different behaviour for padding-top padding-bottom
+            padding still pushes away borders but
+            padding, border or margin will not push away other elements, they overlap (https://hacks.mozilla.org/2015/03/understanding-inline-box-model/) 
 
     display: inline-block elements 
         are mixed: can be placed on same line but are able to handle margin-top, margin-bottom etc.
@@ -42,3 +44,20 @@ Margin Collapsing
 
 vertical-align:middle
     needs to be set on all elements of the row not just the one which isn't aligned
+
+
+class vs id selector
+    prefer class, don't just add id for styling (id has other purposes too, like for web links e.g. href="#intro")
+
+:not(.hover) 
+    can usually be avoided by declaring properties for all and then declare for .hover
+
+    a.active {...}
+    a:not(.active) {...}
+
+    vs 
+
+    a.active {...}
+    a {...}
+
+    
