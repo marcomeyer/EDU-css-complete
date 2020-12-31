@@ -8,3 +8,37 @@ box-sizing: border-box;   // often preferred    padding & border are     include
     * {
         box-sizing: border-box;
     }
+
+
+display: block;
+display: inline;
+display: inline-block;
+display: none;
+
+    display:inline elements 
+        cannot have margin-top, margin-bottom
+        cannot have width and height (is set to auto)
+        have different behaviour for padding-top padding-bottom
+
+    display: inline-block elements 
+        are mixed: can be placed on same line but are able to handle margin-top, margin-bottom etc.
+        can have whitespace issue: whitespace in html (sometimes) is treated as additional inline element which messes up size calculations (Lecture 39)
+
+    display:none elements are still in the dom but removed from document flow ( vs. visibility:hidden where it is still part of the document flow)
+
+
+Margin Collapsing
+- https://webdesign.tutsplus.com/tutorials/css-basics-understanding-collapsing-margins--cms-34272
+
+    1.  Block Level Elements
+        Collapsible margins are only possible when using block-level elements.
+
+    2.  Margins Only Collapse Vertically
+        Only vertically adjoining margins will collapse, and even then not always.
+
+    3.  Padding, Borders, and Clearance
+        If we added padding, border, or clearance to the elements in the above examples, the collapsing will not be applied. In other words, one way of getting rid of collapsible margin behavior is to add some sort of separation (border, padding, or clearance) between the margins. 
+
+
+vertical-align:middle
+    needs to be set on all elements of the row not just the one which isn't aligned
