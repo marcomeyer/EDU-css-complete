@@ -60,4 +60,12 @@ class vs id selector
     a.active {...}
     a {...}
 
+
+margin: auto
+    centers horizontally (vertically doesn't work)
+
+<xxx>: inherit
+    use values that would be inherited (instead of defaults, e.g. browser defaults)
     
+text-align: <xxx>
+    not only for text, e.g. for centering child inline elements too
