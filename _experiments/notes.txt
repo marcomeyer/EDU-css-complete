@@ -71,3 +71,13 @@ text-align: <xxx>
     not only for text, e.g. for centering child inline elements too
 
 Unlike inline-block & block elements, inline elements are immune to changing height & width!! They are only as big as they need to be. 
+
+
+position property
+-----------------
+position property applies to all elements (block, inline, inline-block)
+
+z-index applies to elements with position property set ( rsp. != position: static )
+
+When setting position property (e.g. position: fixed) element is taken out of document flow and displayed in front of other elements. Therefore element is still in front when z-index:0. z-index:-1 then moves it behind others
+ 
