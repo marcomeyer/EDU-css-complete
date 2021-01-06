@@ -90,3 +90,7 @@ Positioning context for position:...
 overflow:hidden on parent lets child elements disappear if they move out of the parents area.
 
 overflow:hidden on <body> does not work on its own. (CSS behaviour/issue) You HAVE to specify overflow:... on <html> element too.
+
+Stacking Context:
+- child cannot move behind its parent
+- child cannot move in front of parents siblings which are in front of parent
