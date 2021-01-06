@@ -5,16 +5,13 @@ height: 100%  only work if height of parent is defined (rsp. not determined by i
 box-sizing: content-box;  // default            padding & border are not included in size
 box-sizing: border-box;   // often preferred    padding & border are     included in size
 
+```
     * {
         box-sizing: border-box;
     }
+```
 
-
-display: block;
-display: inline;
-display: inline-block;
-display: none;
-
+#### display property (block, inline, inline-block, none, ...)
     display:inline elements 
         cannot have margin-top, margin-bottom
         cannot have width and height (is set to auto)
@@ -29,7 +26,7 @@ display: none;
     display:none elements are still in the dom but removed from document flow ( vs. visibility:hidden where it is still part of the document flow)
 
 
-Margin Collapsing
+#### margin collapsing
 - https://webdesign.tutsplus.com/tutorials/css-basics-understanding-collapsing-margins--cms-34272
 
     1.  Block Level Elements
@@ -73,8 +70,8 @@ text-align: <xxx>
 Unlike inline-block & block elements, inline elements are immune to changing height & width!! They are only as big as they need to be. 
 
 
-position property
------------------
+#### position property
+
 position property applies to all elements (block, inline, inline-block)
 
 z-index applies to elements with position property set ( rsp. != position: static )
