@@ -94,3 +94,5 @@ overflow:hidden on <body> does not work on its own. (CSS behaviour/issue) You HA
 Stacking Context:
 - child cannot move behind its parent
 - child cannot move in front of parents siblings which are in front of parent
+- position:fixed & sticky always creates new stacking context
+- position:absolute & relative only create new stacking context when z-index is set too
