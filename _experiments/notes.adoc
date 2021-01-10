@@ -96,3 +96,8 @@ Stacking Context:
 - child cannot move in front of parents siblings which are in front of parent
 - position:fixed & sticky always creates new stacking context
 - position:absolute & relative only create new stacking context when z-index is set too
+
+
+img elements don't respect their parents size if parent is display:inline  (make it display:inline-block)
+
+BUG INLINE ELEMENT: (when using box-shadow) there is a white border. vertical-align:top fixes it (or display:block)
