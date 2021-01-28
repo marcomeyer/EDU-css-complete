@@ -1,7 +1,8 @@
 main, div etc. are block level elements  (display: block)
 
 height: 100%  only work if height of parent is defined (rsp. not determined by its children)
-
+        or alternatively use vh
+        
 box-sizing: content-box;  // default            padding & border are not included in size
 box-sizing: border-box;   // often preferred    padding & border are     included in size
 
@@ -101,3 +102,7 @@ Stacking Context:
 img elements don't respect their parents size if parent is display:inline  (make it display:inline-block)
 
 BUG INLINE ELEMENT: (when using box-shadow) there is a white border. vertical-align:top fixes it (or display:block)
+
+margin:auto to center block level elements
+
+console.dir('.backdrop') to print the object
